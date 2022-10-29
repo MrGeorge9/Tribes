@@ -1,0 +1,35 @@
+name: Build and deploy ASP.Net Core app to Azure Web App - Eucyon-Tribes
+
+on:
+  push: 
+    branches:
+    - master
+
+jobs:
+  build-and-deploy:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 6.0.x
+        
+    - name: Restore dependencies
+      run: dotnet restore ./Eucyon-Tribes/Eucyon-Tribes.sln
+      
+    - name: Build & Publish
+      run: dotnet build --configuration Release ./Eucyon-Tribes/Eucyon-Tribes.sln
+      
+    - name: dotnet publish
+      run: dotnet publish ./Eucyon-Tribes/Eucyon-Tribes.csproj -c Release -o './Eucyon-Tribes'
+      
+    - name: 'Deploy to Azure WebApp'
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: Eucyon-Tribes
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0C2C42720F4442B485AA1E10865509CA }}
+        package: './Eucyon-Tribes'

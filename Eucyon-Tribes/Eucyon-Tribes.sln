@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eucyon-Tribes", "Eucyon-Tribes.csproj", "{B2DE99EE-EC1D-4426-AC01-F6C7E589F6BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tribes.Tests", "..\Tribes.Tests\Tribes.Tests.csproj", "{4A5BE24D-F5D1-453D-A5AC-AE301AC48C48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2DE99EE-EC1D-4426-AC01-F6C7E589F6BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2DE99EE-EC1D-4426-AC01-F6C7E589F6BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2DE99EE-EC1D-4426-AC01-F6C7E589F6BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2DE99EE-EC1D-4426-AC01-F6C7E589F6BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A5BE24D-F5D1-453D-A5AC-AE301AC48C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A5BE24D-F5D1-453D-A5AC-AE301AC48C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A5BE24D-F5D1-453D-A5AC-AE301AC48C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A5BE24D-F5D1-453D-A5AC-AE301AC48C48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E637706A-B1A9-4ABA-A21C-7FD397867806}
+	EndGlobalSection
+EndGlobal
